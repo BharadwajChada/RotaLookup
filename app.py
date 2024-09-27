@@ -10,7 +10,7 @@ def connect_to_google_sheet(sheet_url):
              "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
 
     # Provide the path to your service account credentials file
-    creds = ServiceAccountCredentials.from_json_keyfile_name("subtle-photon-436710-a7-c049d7869174", scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name("/Users/bharadwajchada/Documents/Rota_Lookup/subtle-photon-436710-a7-c049d7869174.json", scope)
     client = gspread.authorize(creds)
 
     # Open the Google Sheet by URL
